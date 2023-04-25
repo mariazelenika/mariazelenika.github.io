@@ -10,7 +10,6 @@
 body {
     width: 100%;
     min-height: 100vh;
-    overflow: hidden;
     background: #012d6c;
 }
 
@@ -19,9 +18,28 @@ header {
     position: relative;
 }
 
-section {
-    width: 100%;
-    position: relative;
+main {
+    margin: auto;
+    max-width: 640px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 1.7em;
+}
+
+p {
+    font-size: 0.9em;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.subheading {
+    font-size: 0.9em;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
 }
 
 .navbar {
@@ -68,47 +86,17 @@ section {
 
 .container {
     display: flex;
-    width: 100%;
-    min-height: 100vh;
+    margin: 0 auto;
+    max-width: 640px;
     align-items: center;
     justify-content: center;
     position: relative;
-}
-
-.text_container{
-    width: 50%;
-    padding-left: 5rem;
-    /*padding-top: 2rem;*/
-}
-
-.text_container h2{
-    font-size: 8vw;
-    font-weight: 900;
-    line-height: 10vw;
-    text-transform: capitalize;
-}
-
-.text_container h2::first-line {
-    color: #ffffff;
-    Letter-spacing: 5px;
-    /*text-shadow: 0 5px 10px rgba(0,0,0,0.5);*/
-}
-
-.text_container h5 {
-    color: #ffffff;
-    font-size: 2vw;
-    font-weight: 300;
-    text-align: left;
-    margin-top: 20px;
-    margin-right: 10vw;
-    text-transform: capitalize;
 }
 
 .text_container p {
     font-size: 1.2vw;
     font-weight: 400;
     color: #f2f2f2;
-    margin-top: 20px;
 }
 
 .image_container {
@@ -240,7 +228,6 @@ input{
 
     .text_container {
         width: 100%;
-        padding: 10vw 10vw 1vw 10vw;
         z-index: 100;
     }
 
@@ -255,6 +242,8 @@ input{
     
     .text_container p{
         font-size: 3vw;
+        margin-left: 7vw;
+        margin-right: 7vw;
     }
 
     .image_container {
