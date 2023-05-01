@@ -128,8 +128,8 @@ section {
 }
 
 .imgbox img {
-    height: 70%;
-    width: 70%;
+    height: 73%;
+    width: 73%;
     object-fit: cover;
 }
 
@@ -266,7 +266,6 @@ input{
 
     .imgbox{
         height: 80%;
-        margin: 0;
     }
 
 }
