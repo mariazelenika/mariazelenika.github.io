@@ -30,6 +30,20 @@ h1 {
     font-size: 1.7em;
 }
 
+h2 {
+    color: #f2f2f2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.3em;
+}
+
+h3 {
+    color: #f2f2f2;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-size: 1.1em;
+}
+
 p {
     font-size: 0.9em;
     margin-top: 1rem;
@@ -94,9 +108,11 @@ p {
 }
 
 .text_container p {
-    font-size: 1.2vw;
+    font-size: 0.9rem;
     font-weight: 400;
     color: #f2f2f2;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
 }
 
 .image_container {
@@ -109,17 +125,15 @@ p {
     /*margin-top: 10vw;*/
 }
 
-.imgbox {
-    position: relative;
-    min-height: 0vh;
-    margin-left: 10vw;
+video.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-    .imgbox img {
-        height: 70%;
-        width: 70%;
-        object-fit: cover;
-    }
+a:link {
+    color: #53f8fc;
+}
 
 .wrapper-social {
     display: flex;
@@ -233,16 +247,14 @@ input {
     }
 
         .text_container h2 {
-            font-size: 15vw;
-            line-height: 15vw;
+            margin-left: 7vw;
         }
 
-        .text_container h5 {
-            font-size: 5vw;
+        .text_container h3 {
+            margin-left: 7vw;
         }
 
         .text_container p {
-            font-size: 3vw;
             margin-left: 7vw;
             margin-right: 7vw;
         }

@@ -94,7 +94,7 @@ p {
 }
 
 .text_container p {
-    font-size: 1.2vw;
+    font-size: 0.9rem;
     font-weight: 400;
     color: #f2f2f2;
 }
@@ -241,7 +241,6 @@ input{
     }
     
     .text_container p{
-        font-size: 3vw;
         margin-left: 7vw;
         margin-right: 7vw;
     }
