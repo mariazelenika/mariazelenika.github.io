@@ -1,0 +1,331 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    position: relative;
+}
+
+main {
+    margin: auto;
+    max-width: 900px;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    /*background: #012d6c;*/
+    background: #ffffff;
+    justify-content: space-between;
+    padding: 1.2vw 6vw;
+    z-index: 1000;
+}
+
+.footer {
+    width: 100%;
+    /*background-color: red;
+    color: white;*/
+    text-align: center;
+}
+
+
+/*determines the position of the logo and margin*/
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 0vh;
+    /*margin-left: 1.5rem;*/
+}
+
+/*determines the size of logo*/
+    .logo img {
+        height: 2.0rem;
+        width: 3.0rem;
+        /*object-fit: cover;*/
+    }
+
+
+/*makes the menu in one line*/
+.menuitems {
+    display: flex;
+    margin: auto 0;
+}
+
+/*removes the list numbers from the menu and determines the space between*/
+.menuitems li {
+    list-style: none;
+    margin: 0 1.5vw;
+}
+
+/*makes the menu uppercase and changes fontsize, letterspacing*/
+.menuitems li a {
+    display: block;
+    color: black;
+    font-size: 1.2vw;
+    text-decoration: none;
+    Letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/*changes the color of the menu when you hover*/
+.menuitems li:hover a {
+    color: #53f8fc;
+}
+
+
+/*makes the socials disappear?*/
+.wrapper-social {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+    justify-content: space-between;
+}
+
+/*socials reappear; determines size*/
+.wrapper-social img, .wrapper-social svg, .wrapper-social a {
+    width: 1.3rem;
+    height: 1.3rem;
+    /*fill: #ffffff;*/
+    transition: fill .2s;
+}
+
+/*makes space between socials*/
+.wrapper-social a {
+    margin-left: 1.5rem;
+}
+
+/*changes the color of the socials when you hover*/
+.wrapper-social svg:hover {
+    fill: #53f8fc;
+}
+
+
+/*makes the bar burger inline and centered*/
+.bars {
+    display: flex;
+    align-items: center;
+}
+
+/*determines size and color of bar burger*/
+.bars svg{
+    width: 1.3rem;
+    height: 1.3rem;
+    /*fill: #ffffff;*/
+    transition: fill .2s;
+}
+
+/*changes the color of the bar burger when you hover*/
+.bars svg:hover {
+    fill: #53f8fc;
+}
+
+/*removes the visual of checkbox on top needed for bar burger*/
+input {
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+/*removes the bar burger*/
+.navbar label {
+    display: none;
+}
+
+/*determines the look of the line*/
+hr {
+    width: 100%;
+    height: 1px;
+    background-color: #808080;
+}
+
+
+a:link {
+    color: #53f8fc;
+}
+
+a:hover {
+    color: #00c2c7; /* Darker cyan */
+}
+
+a:visited {
+    color: #b388eb; /* Light purple */
+}
+
+
+/*give some marking on top and bottom for each h2, and determines size*/
+h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+}
+
+/*give some marking on top and bottom for each paragraph, and determines size*/
+p {
+    font-size: 1.0em;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*give some marking on top and bottom for each paragraph 1, and determines size*/
+p1 {
+    font-size: 1.5em;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+/*general div class to keep things in*/
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 900px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/*makes the images smaller in the container and centred*/
+.image_container {
+    float: left;
+    width: 100%; /*I CHANGED THE VALUE FROM THE ORIGINAL style.css*/
+    text-align: center;
+}
+
+/*scales the images inside the image container*/
+.image_container img {
+    width: 100%; /*I CHANGED THE VALUE FROM THE ORIGINAL style.css*/
+}
+
+/*changes the margins for paragraphs in image container*/
+.image_container p {
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/*makes it so that when I click on the hyperlink it goes to the top part not bottom*/
+.text_container {
+    scroll-margin-top: 60px;
+}
+
+/*special div class to make space between header and first text*/
+.space {
+    margin-bottom: 4em; /* adds 2 units of spacing after each div */
+    visibility: hidden;
+}
+
+
+
+
+/*ADDEDDD*/
+/*makes the video centered and puts auto margins*/
+video.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+@media (max-width: 900px) {
+    body {
+        overflow: auto;
+    }
+
+    /*makes the bar burger appear and determines how it looks like when you click*/
+    .navbar label {
+        display: flex;
+        color: #ffffff;
+        font-size: 4vw;
+        padding: 1vw 1.5vw;
+        /*background: #012d6c;*/
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    /*makes the menu disappear*/
+    .menuitems {
+        position: fixed;
+        top: 0;
+        right: -40vw;
+        width: 40vw;
+        height: 100%;
+        background: #ffffff;
+        padding-top: 15vw;
+        padding-left: 5vw;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s ease;
+    }
+
+    /*determines the look of the menu inside the bar burger*/
+    .menuitems li a {
+        color: #000000;
+        font-size: 4vw;
+        margin: 0.5vw 0;
+    }
+
+    /*makes it so when you click the bar burger that the menu appears*/
+    #check:checked ~ header .navbar .menuitems {
+        right: 0;
+    }
+
+    /*makes sure the container stacks items vertically inside*/
+    .container {
+        flex-direction: column;
+    }
+
+    /*makes each image take full width when stacked*/
+    .image_container {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+
+    /*puts some left and right margins on the p1 in container*/
+    .container p1 {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+    /*puts some left margin on the h2 in text_container*/
+    .text_container h2 {
+        margin-left: 7vw;
+    }
+
+    /*puts some left and right margins on the h3 in text_container*/
+    .text_container h3 {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+    /*puts some left and right margins on the paragraphs in text_container*/
+    .text_container p {
+        margin-left: 7vw;
+        margin-right: 7vw;
+    }
+
+
+
+    /*ADDEDDDD*/
+    /*scales the images inside the image container*/
+    .image_container img {
+        width: 86%;
+    }
+
+    
+}
